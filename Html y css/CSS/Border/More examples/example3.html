@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        p.bor{
+            border-style: solid;
+        }
+        p.n1{
+            border-color: #0000ff;
+        }
+        p.n2{
+            border-color: #ff0000 #0000ff;
+        }
+        p.n3{
+            border-color: #ff0000 #00ff00 #0000ff;
+        }
+        p.n4{
+            border-color: #ff0000 #00ff00 #0000ff rgb(250,0,250);
+        }
+    </style>
+</head>
+<body>
+    <p class="n1 bor">1 colored border!</p>
+    <p class="n2 bor">2 colored border!</p>
+    <p class="n3 bor">3 colored border!</p>
+    <p class="n4 bor">4 colored border!</p>
+    <p><b>Note: </b>The "border-color" property does not work if
+         it is used alone. Use the "border-style" property to set the borders first.</p>
+</body>
+</html>

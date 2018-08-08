@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div.background{
+            background: url("klematis.jpg") repeat;
+            border: 2px solid black;
+        }
+        div.transbox{
+            margin: 30px;
+            background-color: #ffffff;
+            border: 1px solid #000;
+            opacity: 0.6;
+            filter: alpha(opacity=60);
+        }
+        div.transbox p{
+            margin: 5%;
+            font-weight: bold;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="transbox">
+            <p>This is some text that is placed in the transparent box.</p>
+        </div>
+    </div>
+</body>
+</html>

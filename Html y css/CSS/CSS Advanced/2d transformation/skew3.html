@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+        }
+        div#myDiv{
+            -ms-transform: skew(20deg,20deg);
+            -webkit-transform: skew(20deg,20deg);
+            transform: skewX(20deg,20deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>The skewX() Method</h1>
+    <p>The skewX() method skews an element
+         along the xthe X-axis by the given angle.</p>
+        <div>This is a normal div element.</div>
+        <div id="myDiv">This is a element 
+            is skewed 20 degrees along the X axis</div>
+</body>
+</html>

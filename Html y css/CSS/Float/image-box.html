@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .img-container{
+            float:left;
+            width: 33.33%;
+            padding: 5px;
+        }
+        .clearfix{
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <h2>Grid of boxes</h2>
+    <p>Float boxes side by side: </p>
+    <div class="clearfix">
+        <div class="img-container">
+            <img src="img_5terre.jpg" alt="Italy" style="width: 100%">
+        </div>
+        <div class="img-container">
+            <img src="img_forest.jpg" alt="Forest" style="width: 100%">
+        </div>
+        <div class="img-container">
+            <img src="img_mountains.jpg" alt="Mountains" style="width: 100%">
+        </div>
+    </div>
+    <p>Note that we also use the clearfix hack to take care of the layout flow, 
+        and that add the box-sizing property to make sure that 
+        the box doesn't break due to extra padding. Try to remove this code to see the effect.</p>
+</body>
+</html>

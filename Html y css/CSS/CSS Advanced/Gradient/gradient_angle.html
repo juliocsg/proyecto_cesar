@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #grad1, #grad2, #grad3, #grad4{
+            background: red;
+            height: 100px;
+        }
+        #grad1{
+            background: linear-gradient(0deg,red,yellow);
+        }
+        #grad2{
+            background: linear-gradient(90deg,red,yellow);
+        }
+        #grad3{
+            background: linear-gradient(180deg,red,yellow);
+        }
+        #grad4{
+            background: linear-gradient(-90deg,red,yellow);
+        }
+    </style>
+</head>
+<body>
+    <div id="grad1" style="text-align: center;">0deg</div><br>
+    <div id="grad2" style="text-align: center;">90deg</div><br>
+    <div id="grad3" style="text-align: center;">180deg</div><br>
+    <div id="grad4" style="text-align: center;">-90deg</div>
+    <p><strong>Note: </strong>Internet Explorer 9 and earlier 
+        versions do not support gradients.</p>
+</body>
+</html>

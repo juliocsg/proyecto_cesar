@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .imgbox{
+            float: left;
+            text-align: center;
+            width:120px;
+            border: 1px solid gray;
+            margin:4px;
+            padding:6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="imgbox" id="imgbox1">Box 1 <br><img src="img_5terre.jpg" alt="Italy" width="100%"><button onclick="removeElement()">Remove</button></div>
+    <div class="imgbox" id="imgbox2">Box 2 <br><img src="img_lights.jpg" alt="Lights" width="100%"><button onclick="changeVisibility()">Hide</button></div>
+    <div class="imgbox">Box 3 <br><img src="img_forest.jpg" alt="Forest" width="100%"><button onclick="resetElement()">Reset All</button></div>
+    <script>
+        function removeElement() {
+            document.getElementById("imgbox1").style.display = "none";
+        }
+        function changeVisibility() {
+            document.getElementById("imgbox2").style.visibility = "hidden";
+        }
+        function resetElement() {
+            document.getElementById("imgbox1").style.display = "block";
+            document.getElementById("imgbox2").style.visibility = "visible";
+        }
+    </script>
+</body>
+</html>

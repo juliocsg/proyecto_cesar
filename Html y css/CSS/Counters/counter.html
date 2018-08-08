@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            counter-reset: section;
+        }
+        h2::before{
+            counter-increment: section;
+            content: "Section " counter(section) ": ";
+        }
+    </style>
+</head>
+<body>
+    <h1>Using CSS counters</h1>
+    <h2>HTML tutorial</h2>
+    <h2>CSS tutorial</h2>
+    <h2>JavaScript tutorial</h2>
+    <p><b>Note: </b>IE8 supports these properties only if a !DOCTYPE is specified.</p>
+</body>
+</html>
