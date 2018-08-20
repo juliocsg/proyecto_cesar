@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function lighton () {
+            document.getElementById('myimage').src = "bulbon.gif";
+        }
+        function lightoff () {
+            document.getElementById('myimage').src = "bouroff.png";
+        }
+    </script>
+</head>
+<body>
+    <img src="bouroff.png" 
+    onmousedown="lighton()" onmouseup="lightoff()"
+     id="myimage" width="100" height="180">
+     <p>Click mouse and hold down!</p>
+</body>
+</html>
