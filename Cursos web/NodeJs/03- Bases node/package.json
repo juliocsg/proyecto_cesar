@@ -1,0 +1,15 @@
+{
+    "name": "2.0.0",
+    "version": "2.0.0",
+    "description": "Esta es una aplicación de línea de comando",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Julio César Saucedo",
+    "license": "ISC",
+    "dependencies": {
+        "yargs": "^12.0.2"
+    },
+    "devDependencies": {}
+}
