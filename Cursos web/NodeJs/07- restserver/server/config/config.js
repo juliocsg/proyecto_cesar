@@ -15,6 +15,7 @@ let urlDB;
 if (process.env.NODE_ENV === 'dev') {
     urlDB = 'mongodb://localhost:27017/cafe';
 } else {
+    //git heroku config:set MONGO_URI='sitio'
     urlDB = process.env.MONGO_URI;
 }
 process.env.URLDB = urlDB;
