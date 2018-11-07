@@ -8,8 +8,6 @@ const Usuario = require('../models/usuario');
 
 const app = express();
 
-
-
 app.get('/usuario', function(req, res) {
     //res.json('get Usuario LOCAL!!!');
     //{estado: true}
@@ -38,9 +36,7 @@ app.get('/usuario', function(req, res) {
                     cuantos: conteo
                 });
             });
-
         })
-
 });
 app.post('/usuario', function(req, res) {
 
@@ -112,7 +108,5 @@ app.delete('/usuario/:id', function(req, res) {
             usuario: usuarioBorrado
         })
     });
-
 });
-
 module.exports = app;
