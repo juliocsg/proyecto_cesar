@@ -13,14 +13,12 @@ const app = express();
 app.get('/usuario', verificarToken, (req, res) => {
     //res.json('get Usuario LOCAL!!!');
     //{estado: true}
-    return res.json({
+    /*return res.json({
         usuario: req.usuario,
         nombre: req.usuario.nombre,
         email: req.usuario.email
 
-    });
-
-
+    });*/
     let desde = req.query.desde || 0;
     desde = Number(desde);
     let cambiarEstado = {
@@ -71,7 +69,7 @@ app.post('/usuario', [verificarToken, verificarAdmin_Role], (req, res) => {
     });
 });
 //Actualiación
-app.put('/usuario/:id', [verificarToken, verificarAdmin_Role], function(req, res) {
+app.put('/usuario/:id', [verificarToken, verificarAdmin_Role], (req, res) => {
     let id = req.params.id;
     let body = _.pick(req.body, ["nombre", "email", "img", "role", "estado"]);
 

@@ -44,4 +44,4 @@ let verificarAdmin_Role = (req, res, next) => {
 module.exports = {
     verificarToken,
     verificarAdmin_Role
-};
+}
