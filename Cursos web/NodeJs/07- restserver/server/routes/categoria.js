@@ -128,7 +128,6 @@ app.delete('/categoria/:id', [verificarToken, verificarAdmin_Role], (req, res) =
                 }
             });
         }
-
         res.json({
             ok: true,
             //categoria: categoriaDB
