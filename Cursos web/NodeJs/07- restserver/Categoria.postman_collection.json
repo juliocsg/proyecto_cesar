@@ -1,0 +1,192 @@
+{
+	"id": "e5db78b2-8cf6-4bba-b2dc-4b09a69f7e89",
+	"name": "Categoria",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"273a9abb-344e-4370-bad9-fee0f1aa5da9",
+		"9746b150-5812-48e5-8f44-5d8769342544",
+		"0a2b910d-bc65-4785-bcaa-648a6341d22a",
+		"9e72d8cc-c2c9-4c10-b2ae-5ba259648beb",
+		"f1c74f14-a4f1-422a-8e4a-12993b8d4d76"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "0a2b910d-bc65-4785-bcaa-648a6341d22a",
+			"name": "Categoria: Borrar Categoria",
+			"url": "{{url}}/categoria/5beedbf6ff0bc14f08cfdc0e",
+			"description": "Borramos la categoria",
+			"data": [
+				{
+					"key": "descripcion",
+					"value": "belen",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"type": "text"
+				},
+				{
+					"key": "token",
+					"value": "{{token2}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Content-Type: application/x-www-form-urlencoded\ntoken: {{token2}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "273a9abb-344e-4370-bad9-fee0f1aa5da9",
+			"name": "Categoria: Crear una categoria",
+			"url": "{{url}}/categoria",
+			"description": "Actualizar una categoria",
+			"data": [
+				{
+					"key": "descripcion",
+					"value": "Ensaladas",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/x-www-form-urlencoded"
+				},
+				{
+					"description": "",
+					"enabled": true,
+					"key": "token",
+					"type": "text",
+					"value": "{{token2}}"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Content-Type: application/x-www-form-urlencoded\ntoken: {{token2}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "9746b150-5812-48e5-8f44-5d8769342544",
+			"name": "Categoria: Actualizar una categoria",
+			"url": "{{url}}/categoria/5beedbf6ff0bc14f08cfdc0e",
+			"description": "Actualizar una categoria",
+			"data": [
+				{
+					"key": "descripcion",
+					"value": "Bebida fria",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"type": "text"
+				},
+				{
+					"key": "token",
+					"value": "{{token2}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Content-Type: application/x-www-form-urlencoded\ntoken: {{token2}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "9e72d8cc-c2c9-4c10-b2ae-5ba259648beb",
+			"name": "Categoria: Obtener todas las categorias",
+			"url": "{{url}}/categoria",
+			"description": "",
+			"data": [],
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "token",
+					"value": "{{token2}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"headers": "token: {{token2}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f1c74f14-a4f1-422a-8e4a-12993b8d4d76",
+			"name": "Categoria: Obtener una categoria",
+			"url": "{{url}}/categoria/5bfbdf8c52c5202d4b4ececd",
+			"description": "",
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "token",
+					"value": "{{token2}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "token: {{token2}}\n",
+			"pathVariables": {}
+		}
+	]
+}

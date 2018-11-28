@@ -1,0 +1,260 @@
+{
+	"id": "50be9331-8f38-425c-a6a9-ea920b894973",
+	"name": "Producto",
+	"description": null,
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"f90a8a77-81a0-4501-b02e-1553a2167a6a",
+		"8c02ca83-0e2e-4af8-9143-d45d2a5bbed0",
+		"7e92a920-419d-46c5-a58b-1a03b072ed61",
+		"3e41151a-5da4-486c-8592-2396b9f9d7d2",
+		"2da8f947-f359-4628-97b7-51de48f4d17e",
+		"b6c94d8e-c135-4218-ad6c-adf686223530",
+		"259e8001-0aa8-4f58-886c-da091b8982d4"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "259e8001-0aa8-4f58-886c-da091b8982d4",
+			"name": "Upload: Producto",
+			"url": "{{url}}/upload/productos/5bfc3c4f627d5a71403370b0",
+			"description": "",
+			"data": [
+				{
+					"key": "archivo",
+					"value": "",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": null,
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "2da8f947-f359-4628-97b7-51de48f4d17e",
+			"name": "Producto: Borrar un producto",
+			"url": "{{url}}/productos/5bfc3c4f627d5a71403370b0",
+			"description": "Este servicio no borra, simplemente cambia de disponible a no disponible que retorna falso",
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "token",
+					"value": "{{token2}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "token: {{token2}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "3e41151a-5da4-486c-8592-2396b9f9d7d2",
+			"name": "Producto: Obtener todos los productos",
+			"url": "{{url}}/productos",
+			"description": "",
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "token",
+					"value": "{{token2}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "token: {{token2}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "7e92a920-419d-46c5-a58b-1a03b072ed61",
+			"name": "Producto: Obtener producto",
+			"url": "{{url}}/productos",
+			"description": "",
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "token",
+					"value": "{{token2}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "token: {{token2}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "8c02ca83-0e2e-4af8-9143-d45d2a5bbed0",
+			"name": "Producto: Actualizar un producto",
+			"url": "{{url}}/productos/5bfc3c4f627d5a71403370b0",
+			"description": "",
+			"data": [
+				{
+					"key": "nombre",
+					"value": "Ensalada rica cesar",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "precioUni",
+					"value": "10",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "categoria",
+					"value": "5bfc36629a74926d80c58f52",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "disponible",
+					"value": "true",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "token",
+					"value": "{{token2}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "token: {{token2}}\nContent-Type: application/x-www-form-urlencoded\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "b6c94d8e-c135-4218-ad6c-adf686223530",
+			"name": "Buscar por un termino un producto",
+			"url": "{{url}}/productos/buscar/es",
+			"description": "",
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "token",
+					"value": "{{token2}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "token: {{token2}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f90a8a77-81a0-4501-b02e-1553a2167a6a",
+			"name": "Producto: crear producto",
+			"url": "{{url}}/productos",
+			"description": "Creación de producto",
+			"data": [
+				{
+					"key": "nombre",
+					"value": "Ensalada de Carne",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "precioUni",
+					"value": "5",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "categoria",
+					"value": "5bfc36629a74926d80c58f52",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "token",
+					"value": "{{token2}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "token: {{token2}}\nContent-Type: application/x-www-form-urlencoded\n",
+			"pathVariables": {}
+		}
+	]
+}
