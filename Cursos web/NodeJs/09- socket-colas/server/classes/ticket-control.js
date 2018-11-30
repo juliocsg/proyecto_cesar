@@ -1,0 +1,27 @@
+const fs = require('fs');
+
+class TicketControl {
+    constructor() {
+        this.ultimo = 0;
+        this.hoy = new Date().getDate();
+        let data = require('./../datos/data.json');
+
+        if (data.hoy === this.hoy) {
+
+        } else {
+            this.reiniciarConteo();
+        }
+    }
+    reiniciarConteo() {
+        let jsonData = {
+            ultimo: this.ultimo,
+            hoy: this.hoy
+        };
+        let jsonDataString = JSON.stringify(jsonData);
+        fs.writeFileSync('./../datos/data.json', jsonDataString);
+        console.log('Se ha inicializado el sistema');
+    }
+}
+module.exports = {
+    TicketControl
+}
