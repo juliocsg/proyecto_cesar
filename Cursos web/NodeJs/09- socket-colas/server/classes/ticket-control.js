@@ -34,6 +34,9 @@ class TicketControl {
     getUltimoTicket(){
       return `Ticket ${this.ultimo}`;
     }
+    getUltimos4(){
+      return this.ultimos4;
+    }
     atenderTicket(esccritorio){
         this.ultimos4 = [];
         if (this.tickets.length === 0){
